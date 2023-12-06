@@ -1,0 +1,55 @@
+body {
+    width: 1250px;
+    margin: 10px auto 0;
+}
+
+.header {
+    color: #003685;
+}
+
+.header__ttl {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.header__inner {
+    margin-top: -20px;
+
+}
+ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__inner-item {
+    margin-right: 22px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.design__img {
+    display: block;
+    margin: 120px 0 0 auto;
+    width: 50%;
+    z-index: 10;
+}
+
+.design__txt {
+    margin-top: -140px;
+    font-size: 60px;
+    font-weight: lighter;
+    z-index: 0;
+}
+
+.design__chohokei {
+    margin-top: -7px;
+    width: 75%;
+    height: 180px;
+    z-index: -1;
+    background-color: #002070;
+}
+
+.footer {
+    height: 50px;
+}
