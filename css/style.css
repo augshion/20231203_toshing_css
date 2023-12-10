@@ -1,55 +1,75 @@
 body {
-    width: 1250px;
-    margin: 10px auto 0;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 15px;
     color: #003685;
 }
 
 .header__ttl {
-    font-size: 30px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.header__inner {
-    margin-top: -20px;
-
-}
-ul {
-    display: flex;
-    justify-content: flex-end;
+    font-size: 25px;
+    width: 200px;
 }
 
 .header__inner-item {
-    margin-right: 22px;
-    font-size: 15px;
+    display: flex;
+}
+
+.header__inner-list {
+    margin-right: 15px;
+    font-size: calc(10px + 5 * (100vw -500px) / 1000);
     font-weight: bold;
 }
 
-.design__img {
+.design {
+    width: 100%;
+    position: relative;
+    top: 20px;
+
+}
+
+.design::before {
+    content: "";
     display: block;
-    margin: 120px 0 0 auto;
+    padding-top: 50%;
+}
+
+.design__img {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    bottom: 0;
+    right: 0;
     width: 50%;
-    z-index: 10;
+    z-index: 20;
 }
 
 .design__txt {
-    margin-top: -140px;
-    font-size: 60px;
+    position: absolute;
+     top: 58%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: calc(30px + 52 * (100vw - 500px) / 1000);
     font-weight: lighter;
-    z-index: 0;
+    z-index: 10;
 }
 
 .design__chohokei {
-    margin-top: -7px;
-    width: 75%;
-    height: 180px;
-    z-index: -1;
+    position: absolute;
+    top: 68%;
+    left: 0;
+    bottom: 5%;
+    right: 25%;
     background-color: #002070;
 }
 
 .footer {
-    height: 50px;
+    height: 5px;
 }
